@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Updated Header Section */
+header {
+    display: flex;
+    justify-content: space-between; /* Align content to left and right */
+    align-items: center; /* Vertically align items */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-details {
+    flex: 1; /* Take up remaining space */
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px; /* Add spacing between image and text */
+}
+
+/* Section Styles */
+section {
+    padding: 30px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#about,
+#skills,
+#experience,
+#education,
+#contact {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Updated Skills Section */
+.skills-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: left; /* Center align items */
+    gap: 20px; /* Add spacing between items */
+    margin-top: 20px;
+}
+
+.skill {
+    text-align: left;
+    width: 100%; /* Make items take up full width */
+}
+
+.skill i {
+    font-size: 2em;
+    color: #4CAF50; /* Green color for icons */
+}
+
+.skill span {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center align on mobile */
+    }
+
+    .profile-img {
+        margin-top: 20px;
+        width: 120px; /* Reduce size for mobile */
+        height: 120px;
+    }
+
+    .header-center {
+        order: -1; /* Place name and title above profile image on small screens */
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr 1fr; /* Display 2 items per row on mobile */
+    }
+}
+
+
